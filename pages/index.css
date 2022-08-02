@@ -1,0 +1,141 @@
+
+/*GENERALES*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/*BIENVENIDA*/
+.header {
+ background-image: url("../img/header.jpg");/*Ver como consumirlo de contenful*/
+  background-size: cover;
+  height: 616px;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.welcome__title {
+  font-size: 48px;
+  margin: 0;
+}
+
+.welcome__mi-site {
+  font-size: 32px;
+}
+/*template */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.card__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.card_description {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  text-align: center;
+}
+
+.card_description__title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card_description__detail {
+  /*text-align: center; */
+  font-size: 16px;
+}
+/*PRESENTACION*/
+#my-presentation {
+  padding: 20px 60px;
+  background-color: #141414;
+  color:#ddd;
+}
+
+#my-presentation .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+/* no logro pisar el estilo del card__img para darle particularidades como con el titulo y descripcion
+#my-presentacion .card__img {
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+}
+*/
+#my-presentation .card_description__detail {
+  text-align: left;
+  font-size: 16px;
+  color:#ddd;
+}
+
+@media (max-width: 768px) {
+  #my-presentation {
+    background-color: #222;
+    color: #ddd;
+    padding: 0;
+  }
+
+  #my-presentation img {
+    display: none;
+  }
+}
+
+#my-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+}
+#my-service .card__img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.services-containe__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.card_description__detail {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #my-services {
+    grid-template-columns: 1fr;
+  }
+}

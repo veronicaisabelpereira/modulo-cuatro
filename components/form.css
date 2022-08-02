@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .form-contact__container {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form-contact__container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .form-contact__container__title {
+    font-family: "Monserrat", sans-serif;
+    color: #ddd;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+  
+  .form-contact__container__title h2 {
+    margin: 0;
+  }
+  
+  .form-contact__container__inputs {
+    font-size: 14px;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-contact__container__inputs__input {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .form-contact__container__inputs__input input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 335px;
+    height: 45px;
+    border-radius: 5px;
+  }
+  
+  .form-contact__container__inputs__input textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 335px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  
+  .form-contact__container__inputs__input button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 45px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #ddd;
+    font-size: 16px;
+    font-weight: 700;
+  }

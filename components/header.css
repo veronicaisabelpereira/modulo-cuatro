@@ -1,0 +1,101 @@
+
+/*GENERALES*/
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+   /**/
+  .header-navegador{
+    background-color: #141414;
+    height: 85px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-component__logo{
+    height: 45px;
+  }
+  
+  .header-burguer {
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .header-burguer-line {
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #dbdbdc;
+  }
+  
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #141414;
+    height: 667px;
+  }
+  
+  .close-button-container {
+    height: 85px;
+    padding: 30px;
+    cursor: pointer;
+    text-align: right;
+    background-color: #141414;
+    border: none;
+  }
+  
+  .close-button {
+    height: 40px;
+  }
+  
+  .header-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 45px;
+    height: 100%;
+  }
+  
+  .header-nav-li {
+    color: #dbdbdc;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 804px) {
+    .header-burguer,
+    .close-button-container {
+      display: none;
+    }
+  
+    .header-navegador {
+      height: 120px;
+      padding: 0 100px;
+    }
+
+    .header-nav {
+      display: flex;
+      position: relative;
+      height: 100%;
+    }
+  
+    .header-nav-links {
+      display: block;
+    }
+  
+    .header-nav-li {
+      font-size: 20px;
+      margin: 0 30px;
+    }
+  }

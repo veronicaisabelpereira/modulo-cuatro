@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .card__img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+  
+  .card_description {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    text-align: center;
+  }
+  
+  .card_description__title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .card_description__detail {
+    font-size: 16px;
+  }
+  
+  .card_description__link {
+    text-align: right;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .card_description__link:hover,
+  .card_description__link:active {
+    color: rgb(22, 90, 133);
+  }
+  
+  #card-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    background-color: #222;
+    color: #ddd;
+    padding: 20px;
+  }
+  
+  .portfolio-containe__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    background-color: #222;
+    color: aliceblue;
+  }
+  
+  .card_description__detail {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    #card-portfolio {
+      grid-template-columns: 1fr;
+    }
+  }
