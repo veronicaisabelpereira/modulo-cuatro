@@ -5,7 +5,7 @@ const footerComponent = (el) => {
   footer.innerHTML = `
           <div class="footer-component__container">
               <div class="footer-component__logo">
-                  <a class="footer-component__logo-title" href="../../index.html"> <img src="../img/logo.png" alt="logo" class="header-component__logo"></a>
+                  <a class="footer-component__logo-title" href="../../index.html"> <img src="./img/logo.png" alt="logo" class="header-component__logo"></a>
               </div>
               <div class="footer-component__social">
                   <ul class="footer-component__social-list">

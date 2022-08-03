@@ -6,7 +6,7 @@ function headerComponent(container) {
   headerEl.innerHTML = `<div class="header-navegador">
     <div class="header-logo">
       <a href="./index.html">
-      <img src="../img/logo.png" alt="logo" class="header-component__logo"></a>
+      <img src="./img/logo.png" alt="logo" class="header-component__logo"></a>
     </div>
       <div class="header-burguer">
         <div class="header-burguer-line"></div>
@@ -15,7 +15,7 @@ function headerComponent(container) {
       </div>
     <nav class="header-nav">
       <button class="close-button-container">
-        <img class="close-button" src="../img/close-button.png" alt="close-button">
+        <img class="close-button" src="./img/close-button.png" alt="close-button">
       </button>
       <div class="header-nav-links">
         <a class="header-nav-li" href="./portfolio.html">Portfolio</a>
